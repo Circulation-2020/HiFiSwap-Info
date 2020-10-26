@@ -1,0 +1,74 @@
+@import "./params.scss";
+
+@font-face {
+  font-family: 'Inter var';
+  src: url('/static/font/Inter-roman.var.woff2')
+}
+html body{
+
+
+  background: radial-gradient(50% 50% at 50% 50%, rgba($c, 0.3) 0, transparent);
+  background-repeat: no-repeat;
+  background-color: #f4f4f4;
+  background-position: center -300px;
+  min-height: 100vh;
+  font-size: 14px;
+  font-family: Inter var;
+
+  a{
+    color: $c;
+    &:hover{
+      color: $c !important;
+    }
+  }
+
+  .btn{
+    &.btn-outline-primary{
+      border-color: $c !important;
+      color: $c !important;
+      &:hover,&:focus,&:active{
+        background-color: transparent !important;
+        box-shadow: none !important;
+      }
+    }
+    &.btn-primary{
+      background-color: $c !important;
+      border-color: $c !important;
+      color: #fff !important;
+
+      &:hover,&:focus,&:active{
+        box-shadow: none !important;
+      }
+    }
+  }
+
+  .table{
+    tr{
+      td,th{
+        &:first-child{
+          padding-left: 0;
+        }
+        &:last-child{
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 788px) {
+  html body{
+    .px-4{
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  html body{
+    .container{
+      max-width: 1320px;
+    }
+  }
+}

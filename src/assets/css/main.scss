@@ -1,0 +1,119 @@
+@import './params.scss';
+@import './restyle.scss';
+
+html body{
+
+  // util
+  .vam{
+    vertical-align: middle;
+  }
+  .vat{
+    vertical-align: top;
+  }
+  .tal{
+    text-align: left;
+  }
+  .tar{
+    text-align: right;
+  }
+  .op5{
+    opacity: 0.5;
+  }
+  .cp{
+    cursor: pointer;
+  }
+  .abs{
+    position: absolute;
+  }
+  .rel{
+    position: relative;
+  }
+
+  // --el
+  .bg-card{
+    background-color: hsla(0, 0%, 100%, .5);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+    border-radius: 10px;
+  }
+  .btn-copy{
+        background-color: #eee;
+        display: inline-block;
+        border-radius: 4px;
+        padding: 2px 5px;
+        font-size: 12px;
+        user-select: none;
+        cursor: pointer;
+        width: 50px;
+        text-align: center;
+  }
+  .sec-title{
+    font-size: 19px;
+  }
+  .tabset{
+    .tab{
+      display: inline-block;
+      margin-right: 20px;
+      cursor: default;
+      user-select: none;
+      &.on{
+        font-weight: 700;
+      }
+    }
+  }
+  .el-card-link{
+    display: inline-block;
+    background-color: hsla(0, 0%, 100%, .6);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333 !important;
+  }
+
+  // --ui
+  .ui-loading{
+    text-align: center;
+    color: #888;
+    padding: 50px;
+  }
+  
+  // 
+  .main-table{
+    tr{
+      &:first-child{
+        td,th{
+          border-top-color: transparent !important;
+        }
+      }
+    }
+    td,th{
+      vertical-align: middle;
+    }
+  }
+
+  .t-gray{
+    color: #888;
+  }
+
+}
+
+// pc
+@media(min-width: 788px){
+  html body{
+    .pc-ml-auto{
+      margin-left: auto;
+    }
+    .pc-mr-auto {
+      margin-left: auto;
+    }
+  }
+}
+
+// mb
+@media(max-width: 788px) {
+  html body {
+    .mb-none {
+      display: none;
+    }
+  }
+}
